@@ -1,0 +1,686 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+.dropdown{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    height: 12vh;
+    background-color: #bdbdbd;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.logoTitulo{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:active{
+    color: #333;
+}
+
+a:visited{
+    color: #333;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.marca{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.menu ul{
+    margin-right: 12px;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 8px;
+}
+
+.menu a{
+    list-style: none;
+    font-size: 17px;
+    padding: 15px;
+    color: #333;
+}
+
+.menu a:hover{
+    border-bottom: 2px solid #333;
+}
+
+.footer{
+    background-color: #bdbdbd;
+    height: 8vh;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+}
+
+.footer li{
+    list-style: none;
+    padding: 20px;
+}
+
+.footer a{
+    padding: 5px;
+}
+
+.footer a:hover{ 
+    border-bottom: 2px solid #333;
+}
+
+.iconos{
+    padding-left: 10px;
+}
+
+/* INDEX */
+
+.indexGrilla {  
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "section section aside aside"
+        "section section aside aside"
+        "footer footer footer footer";
+    }
+
+.header { 
+    grid-area: header; 
+}
+
+.section { 
+    grid-area: section; 
+}
+
+.aside { 
+    grid-area: aside; 
+}
+
+.footer { 
+    grid-area: footer; 
+}
+
+.section{
+    height: 80vh;
+    display: flex;
+}
+
+.aside{
+    display: flex;
+    height: 80vh;
+}
+
+.cajaTexto{
+    width: 100%;
+    padding: 50px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 60px;
+}
+
+.descripcion{
+    text-align: justify;
+    padding: 50px 70px;
+    line-height: 35px;
+}
+
+.cajaImagen{
+    height: 80vh;
+    box-sizing: border-box;
+    padding-right: 8rem;
+}
+
+.imagen{
+    width: 420px;
+    height: 519px;
+}
+
+/* PRODUCTOS */
+
+.grillaProd {  
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "descripcionProductos descripcionProductos descripcionProductos"
+        "descripcionProductos descripcionProductos descripcionProductos"
+        "card1 card2 card3"
+        "card1 card2 card3"
+        "footer footer footer";
+    }
+
+.header { 
+    grid-area: header; 
+}
+
+.footer { 
+    grid-area: footer; 
+}
+
+.descripcionProductos { 
+    grid-area: descripcionProductos; 
+}
+
+.card1 { 
+    grid-area: card1; 
+}
+
+.card2 { 
+    grid-area: card2; 
+}
+
+.card3 { 
+    grid-area: card3; 
+}
+
+.descripcionProductos{
+    width: 100%;
+    padding: 60px;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 20px;
+}   
+
+.tituloProd{
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card{
+    box-sizing: border-box;
+    padding: 25px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+} 
+
+.subtituloProd{
+    font-size: 1.7rem;
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+
+.card p{
+    padding: 10px;
+    line-height: 25px;
+}
+
+.panes{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn{
+    width: 30%;
+	padding: 8px 16px;
+	margin-top: 32px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	display: block;
+	color: #fff;
+	background-color: #000;
+}
+
+.btn:hover{
+    background-color: rgb(51, 51, 51, 0.7);
+    border: rgb(51, 51, 51, 0.7) 1px solid;
+}
+
+/* GALERÍA */
+
+.galeriaGrilla {  
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "galeriaText galeriaText galeriaText galeriaText"
+        "galeria galeria galeria galeria"
+        "footer footer footer footer";
+}
+
+.header { 
+    grid-area: header; 
+}
+
+.galeriaText { 
+    grid-area: galeriaText; 
+}
+
+.galeria { 
+    grid-area: galeria; 
+}
+
+.footer { 
+    grid-area: footer; 
+}
+
+.galeriaText{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.galeriaText h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.galeriaText p{
+    line-height: 25px;
+    text-align: justify;
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+} 
+
+.panes2{
+    width: 263px;
+    height: 265px;
+    padding: 5px;
+}
+
+/* NOSOTROS */
+
+.nosotrosGrilla {  
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "quienesSomos quienesSomos asideNosotros asideNosotros"
+        "quienesSomos quienesSomos asideNosotros asideNosotros"
+        "footer footer footer footer";
+    }
+
+.header { 
+    grid-area: header; 
+}
+
+.quienesSomos { 
+    grid-area: quienesSomos; 
+}
+
+.asideNosotros { 
+    grid-area: asideNosotros; 
+}
+
+.footer { 
+    grid-area: footer; 
+}
+
+.nosotrosTitulo{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.quienesSomos{
+    width: 70%;
+    height: 80vh
+}
+
+.nosotros1{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: justify;
+    line-height: 25px;
+    padding: 100px 0 100px 150px;
+}
+
+.nosotros2{
+    width: 100%;
+    height: 80vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10rem;
+} 
+
+.imgBruschettas{
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+
+.contactoGrilla {  
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "containerForm containerForm containerForm containerForm"
+        "containerForm containerForm containerForm containerForm"
+        "footer footer footer footer";
+    }
+
+.header { 
+    grid-area: header; 
+}
+
+.containerForm { 
+    grid-area: containerForm; 
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer { 
+    grid-area: footer; 
+}
+
+.contacto{
+    text-align: center;
+    font-size: 35px;
+    padding: 1rem;
+}
+
+.form{
+    width: 300px;
+	padding: 16px;
+	border-radius: 10px;
+	margin: auto;
+	background-color: #ccc;
+}
+
+form label{
+	width: 72px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width: 180px;
+	padding: 3px 10px;
+	border: 1px solid #f6f6f6;
+	border-radius: 3px;
+	background-color: #f6f6f6;
+	margin: 8px 0;
+	display: inline-block;
+}
+
+form input[type="submit"]{
+	width: 100%;
+	padding: 8px 16px;
+	margin-top: 32px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	display: block;
+	color: #fff;
+	background-color: #000;
+} 
+
+form input[type="submit"]:hover{
+	cursor: pointer;
+}
+
+textarea{
+	width: 100%;
+	height: 100px;
+	border: 1px solid #f6f6f6;
+	border-radius: 3px;
+	background-color: #f6f6f6;			
+	margin: 8px 0;
+	resize:none;
+	display:block;
+}
+
+.submit:hover{
+    background-color: rgb(51, 51, 51, 0.7);
+    border: rgb(51, 51, 51, 0.7) 1px solid;
+}
+
+@media (max-width: 480px) {
+
+    /* GENERAL */
+
+    .dropbtn {
+        background-color: #bdbdbd;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 1.5vh;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #bdbdbd;
+    }
+
+    .header{
+        height: 10vh;
+    }
+
+    .marca{
+        padding: 26px 20px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .logoTitulo{
+        flex-direction: row;
+    }
+
+    /* INDEX */
+
+    .indexGrilla {  
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+
+    .section{
+        height: 65vh;
+    }
+
+    .aside{
+        height: 72vh;
+    }
+
+    .descripcion{
+        padding: 50px 20px;
+    }
+
+    .cajaTexto{
+        padding: 50px;
+        margin: 0 auto;
+    }
+
+    .cajaImagen{
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    .menu ul li{
+        padding: 0;
+        margin: 10px 0;
+    }
+    
+    .menu a{
+        padding: 5px;
+    }
+
+    /* PRODUCTOS */
+
+    .grillaProd {  
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas:
+            "header header header"
+            "descripcionProductos descripcionProductos descripcionProductos"
+            "descripcionProductos descripcionProductos descripcionProductos"
+            "card1 card1 card1"
+            "card2 card2 card2"
+            "card3 card3 card3"
+            "footer footer footer";
+        }
+
+    .card{
+        border: rgb(189, 189, 189) 2px solid;
+        border-radius: 15px;
+        padding: 25px;
+        width: 70%;
+        margin: 20px auto;
+        background-color: rgb(189, 189, 189, 0.3);
+    }
+
+    .footer{
+        margin-top: 20px;
+    }
+
+    /* GALERÍA */
+
+    .galeria{
+        height: 170vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .galeriaText h2{
+        padding-top: 0.5rem;
+    }
+
+    .panes2{
+        padding-top: 1.5rem;
+        border-radius: 3rem;
+    }
+
+    /* NOSOTROS */
+
+    .nosotrosGrilla {  
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "quienesSomos quienesSomos quienesSomos quienesSomos"
+            "asideNosotros asideNosotros asideNosotros asideNosotros"
+            "footer footer footer footer";
+        }
+
+    .header { 
+        grid-area: header; 
+    }
+
+    .quienesSomos { 
+        grid-area: quienesSomos; 
+    }
+
+    .asideNosotros { 
+        grid-area: asideNosotros; 
+    }
+
+    .footer { 
+        grid-area: footer; 
+    }
+
+    .quienesSomos{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .nosotros1{
+        padding: 0 2rem;
+        height: 45vh;
+    }
+
+    .nosotros2{
+        padding: 2rem;
+    }
+
+    /* CONTACTO */
+    
+    .containerForm{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .contacto{
+        padding-top: 3rem;
+    }
+}
